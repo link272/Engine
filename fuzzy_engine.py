@@ -22,12 +22,9 @@ class FuzzyEngine(object):
 			parts = g_kde.ppf(np.linspace(0,1, self.n_partition + 1))
 			parts = [i for i in zip(self.parts[:-1], self.part[1:])]
 			self.partitions.append(parts)
-			
-				
-		
 
 	def create_rules():
-		pass
+		
 
 	def create_hyperarea():
 		pass
