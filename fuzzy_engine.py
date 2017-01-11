@@ -6,7 +6,7 @@ class FuzzyEngine(object):
 	def __init__(self, n_partitions = 3):
 		self.dataset = None
 		self.target = None
-		self.partition = []
+		self.partitions = []
 		self.n_partitions = []
 		self.map = []
 		self.hyperarea = []
@@ -15,11 +15,10 @@ class FuzzyEngine(object):
 		pass
 
 
-	def create_partition():
+	def create_partitions():
 		for x in self.dataset:
-			
+				
 		
-
 
 	def create_rules():
 		pass
