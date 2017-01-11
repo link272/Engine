@@ -19,7 +19,10 @@ class FuzzyEngine(object):
 		for x in self.dataset:
 			g_kde = Gaussien_kde(x)
 			np.vectorize(g_kde.ppf)
-			partition = zip(np.linspace(0,1, self.n_partition + 1)
+			parts = g_kde.ppf(np.linspace(0,1, self.n_partition + 1))
+			parts = [i for i in zip(self.parts[:-1], self.part[1:])]
+			self.partitions.append(parts)
+			
 				
 		
 
