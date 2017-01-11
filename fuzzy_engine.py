@@ -17,6 +17,9 @@ class FuzzyEngine(object):
 
 	def create_partitions():
 		for x in self.dataset:
+			g_kde = Gaussien_kde(x)
+			np.vectorize(g_kde.ppf)
+			partition = zip(np.linspace(0,1, self.n_partition + 1)
 				
 		
 
